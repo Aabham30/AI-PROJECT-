@@ -113,8 +113,8 @@ def build_model() -> keras.Model.Sequential:
 
 #@: Driver Code
 if __name__.__contains__('__main__'):
-    train_path: str = 'C:\\Users\\RAHUL\\OneDrive\\Desktop\\covid_dataset\\train'
-    test_path: str = 'C:\\Users\\RAHUL\\OneDrive\\Desktop\\covid_dataset\\test'
+    train_path: str = 'C:\\Users\\Aabha\\OneDrive\\Desktop\\covid_dataset\\train'
+    test_path: str = 'C:\\Users\\Aabha\\OneDrive\\Desktop\\covid_dataset\\test'
     image_gen: ImageDataGenerator = covid_data_preprocess()
     image_gen.flow_from_directory(train_path, target_size=(100, 100))
     image_gen.flow_from_directory(test_path, target_size=(100, 100))
